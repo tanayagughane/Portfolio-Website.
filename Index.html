@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tanaya Gughane — Portfolio</title>
+  <meta name="description" content="Portfolio of Tanaya Gughane — B.E. (CSE) 2025. Frontend developer: HTML, CSS, JS." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- animated particle/tech background canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="page">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>TG</div>
+        <div>
+          <h1>Tanaya Gughane</h1>
+          <p>B.E. (CSE)</p>
+          <p> Fresher</p>
+        </div>
+      </div>
+
+      <nav aria-label="Main nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <button class="btn" id="download-resume">Download Resume</button>
+        <button class="btn" id="toggle-theme">Theme</button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="home" class="hero">
+      <section class="card intro reveal">
+        <h2>Hello, I'm <span class="accent">Tanaya Gughane</span></h2>
+        <p class="lead">Computer Engineering student (B.E. CSE — 2025). I build clean, responsive frontends and love solving real problems.</p>
+
+        <p><span class="typed" id="typed"> Web Developer • Full-Stack developer • Problem Solver</span></p>
+
+        <div class="cta">
+          <button class="btn primary" onclick="document.querySelector('#projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
+          <button class="btn" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Contact</button>
+        </div>
+
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="https://github.com/tanayagughane" target="_blank">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/tanaya-gughane-a69569234" target="_blank">LinkedIn</a>
+          <a class="btn" href="mailto:tanaya16gughane@gmail.com" target="_blank">Email</a>
+        </div>
+      </section>
+
+      <aside class="card reveal" style="display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center">
+        <div class="avatar" aria-hidden>TG</div>
+        <div><strong>Tanaya Gughane</strong></div>
+        <div class="small"> B.E — HVPM COET Amravati</div>
+        <div class="small"> Sant Gadge Baba Amravati University</div>
+        <div class="small">CGPA: 8.21</div>
+      </aside>
+    </main>
+
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
+      <div class="section-title"><h3>Skills</h3><p>Technologies & tools I use</p></div>
+      <div class="skills">
+        <div class="skill card"><strong>HTML & CSS</strong><div class="muted">Responsive layouts, animations</div></div>
+        <div class="skill card"><strong>JavaScript</strong><div class="muted">DOM, ES6+, Fetch</div></div>
+        <div class="skill card"><strong>C / C++ / Java</strong><div class="muted">Core programming</div></div>
+        <div class="skill card"><strong>Python</strong><div class="muted">Scripting & data</div></div>
+        <div class="skill card"><strong>SQL</strong><div class="muted">DB fundamentals</div></div>
+        <div class="skill card"><strong>Git & GitHub</strong><div class="muted">Version control</div></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+      <div class="section-title"><h3>Projects</h3><p>Selected academic & internship projects</p></div>
+      <div class="projects">
+        <article class="project card">
+          <div class="proj-thumb">Image Gallery (CodeAlpha)</div>
+          <h4>Responsive Image Gallery</h4>
+          <p class="muted">Interactive gallery with lightbox, captions, animations and theme toggle — built for CodeAlpha internship.</p>
+          <div class="proj-meta">
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+            <a href="https://github.com/your-github/CodeAlpha_ImageGallery" target="_blank" class="accent-link">View</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <div class="proj-thumb">Calculator</div>
+          <h4>Smart Calculator</h4>
+          <p class="muted">Keyboard-friendly calculator with real-time validation and clean UI.</p>
+          <div class="proj-meta"><a href="#" class="accent-link">View</a></div>
+        </article>
+
+        <article class="project card">
+          <div class="proj-thumb">Sentiment Analysis</div>
+          <h4>Sentiment Analysis & Trend Prediction</h4>
+          <p class="muted">Final-year project: rule-based sentiment analysis & trend prediction for e-commerce platforms.</p>
+          <div class="proj-meta"><a href="#" class="accent-link">View</a></div>
+        </article>
+
+        <article class="project card">
+          <div class="proj-thumb">AI Voice Assistant</div>
+          <h4>AI-Powered Voice Assistant Chatbot</h4>
+          <p class="muted">Real-time voice queries, dynamic responses and image fetching features.</p>
+          <div class="proj-meta"><a href="#" class="accent-link">View</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="reveal">
+      <div class="section-title"><h3>Experience & Achievements</h3><p>Internships, hackathons & awards</p></div>
+
+      <div style="display:grid;gap:12px">
+        <div class="card">
+          <strong>Intern — Cognifyz Technologies (Sep 2024)</strong>
+          <div class="muted">Full-Stack Web Development internship — built features like a digital clock and participated in team projects.</div>
+        </div>
+
+        <div class="card">
+          <strong>Smart India Hackathon — Participant (2024)</strong>
+          <div class="muted">Participated in SIH to develop practical solutions and enhance teamwork skills.</div>
+        </div>
+
+        <div class="card">
+          <strong>Academic Excellence Award (2019)</strong>
+          <div class="muted">Award for outstanding academic performance in 10th board exams.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME & CONTACT -->
+    <section id="contact" class="reveal">
+      <div class="section-title"><h3>Resume & Contact</h3><p>Download resume or get in touch</p></div>
+
+      <div class="resume-row">
+        <a class="btn primary" id="resume-download" href="C:\Users\Administrator\OneDrive\Desktop\Tanaya Gughane  Resume.pdf" download="Tanaya_Gughane_Resume.pdf">Download Resume (PDF)</a>
+        <div class="muted">Email: <a id="mail-link" href="mailto:tanaya16gughane@gmail.com" class="accent-link">tanaya16gughane@gmail.com</a>  •  Phone: +91 9049717791</div>
+      </div>
+
+      <div style="height:18px"></div>
+
+      <div class="contact-grid">
+        <form class="card" onsubmit="sendMail(event)">
+          <input id="cname" placeholder="Your name" required>
+          <input id="cemail" type="email" placeholder="Your email" required>
+          <input id="csubject" placeholder="Subject">
+          <textarea id="cmessage" rows="5" placeholder="Message"></textarea>
+          <div style="display:flex;gap:10px;margin-top:8px">
+            <button class="btn primary" type="submit">Send Email</button>
+            <button class="btn" type="button" onclick="copyEmail()">Copy Email</button>
+          </div>
+        </form>
+
+        <div class="card">
+          <strong>Contact Info</strong>
+          <div class="muted" style="margin-top:8px">Email: <a href="mailto:tanaya16gughane@gmail.com" class="accent-link">tanaya16gughane@gmail.com</a></div>
+          <div class="muted" style="margin-top:6px">Phone: +91 9049717791</div>
+          <div style="margin-top:12px" class="muted">Available for internships and full-time roles.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="reveal">
+      <p>Made with ❤️ by <strong>Tanaya Gughane</strong> — © 2025</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
